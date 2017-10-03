@@ -1,0 +1,25 @@
+{
+    "name": "swm-glamor-prefixer",
+    "version": "0.0.0",
+    "description": "Custom glamor prefixer used by SWM WA",
+    "main": "dist/index.js",
+    "typings": "typings/index.d.ts",
+    "repository": "https://github.com/luke-john/swm-glamor-prefixer",
+    "author": "Luke John <email@lukejohn.me>",
+    "license": "MIT",
+    "scripts": {
+        "clean": "rimraf dist && rimraf typings",
+        "compile": "tsc --project ./tsconfig.json --outDir ./dist --declarationDir ./typings",
+        "build": "yarn run clean && yarn run compile"
+    },
+    "devDependencies": {
+        "@types/inline-style-prefixer": "^3.0.0",
+        "@types/react": "^16.0.7",
+        "glamor": "^2.20.40",
+        "rimraf": "^2.6.2",
+        "typescript": "^2.5.3"
+    },
+    "peerDependencies": {
+        "inline-style-prefixer": "^3.0.8"
+    }
+}
