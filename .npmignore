@@ -4,12 +4,7 @@ npm-debug.log*
 .idea/
 .DS_Store
 
-dist
-dist-es
-
-*.orig
-*.map
-
+src
 
 yarn-error.log
 
